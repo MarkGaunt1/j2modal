@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <link rel="stylesheet" href="./styles/style.css">
+
+    
+    
+        <title>Jet2 Modal</title>  
+    
+     </head>
+
+    <body style="background-image: url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cirrocumulus-cloud.jpg)">
+
+        <div class="container">
+
+        
+
+        <button onclick="document.getElementById('id01').style.display='block'">My Jet2 Modal Button!</button>
+
+        <div id="id01" class="modal">
+        <form class="modal-content">
+            <div class="container">
+               
+               <h2><img src="./tick.png" alt="green tick" width="50" height="50">&nbsp;Congratulations your Jet2 holiday booking has been confirmed</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+                <hr>
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>&nbsp;
+                <button type="button" onclick="newTab()" class="contbtn">Continue</button>
+            </div>
+            </div>
+        </form>
+        </div>
+
+        </div>
+
+    <script>
+        var modal = document.getElementById('id01');
+
+
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+         }
+
+        newTab = ()=> window.open("https://wallpaperaccess.com/full/42003.jpg", "_blank");
+    
+    </script>
+
+    </body>
+</html>
